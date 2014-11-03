@@ -1,0 +1,17 @@
+div{
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: gray;
+	padding-bottom: 10px;
+}
+
+
+}
+
+.red{
+	color: red;
+}
+
+.hide{
+	display:none;
+}

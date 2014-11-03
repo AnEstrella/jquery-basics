@@ -1,0 +1,157 @@
+<html>
+<head>
+	<title>Basic1</title>
+	<link rel="stylesheet" type="text/css" href="basic1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		console.log('jQuery is working');
+
+		$(".AddClassButton").click(function(){
+			$("p.one").addClass("red");
+		});
+		$(".afterbutton").click(function(){
+			$("p").after("!");
+		});
+		$(".appendbutton").click(function(){
+			$("p.appendp").append("<p>This is the brand spanking new paragraph!</p>");
+		});
+		$(".attrbutton").click(function(){
+			$("#attrimg").attr("width", "500");
+		});
+		$(".beforebutton").click(function(){
+			$("p").before("!");
+		});
+		$(".htmlbutton").click(function(){
+  			$("h1").html("This is the method");
+		});
+		$(".textbutton").click(function(){
+  			$("#textparagraph").text("You set the text!");
+		});
+		$(".valbutton").click(function(){
+  			$("input:text.valtext").val("You set the value!");
+		});
+		$(".slidetogglebutton").click(function(){
+			$("#togglepic").slideToggle("slow");
+		});
+		
+	});
+	</script>
+</head>
+<body>
+
+<div class="AddClass">
+	<h1>AddClass</h1>
+	<input type="button" value=".addClass" class="AddClassButton">
+	<p class="one">Click the button to add class red to this paragraph</p>
+</div>
+
+<div class="after">
+	<h1>After</h1>
+	<input type="button" value=".after" class="afterbutton">
+	<p> Click the button to insert content after selected elements
+</div>
+
+<div class="Append">
+	<h1>Append</h1>
+	<input type="button" value=".append" class="appendbutton">
+	<p class="appendp">Click the button to append a new paragraph!</p>
+</div>
+
+<div class="attr">
+	<h1>attr</h1>
+	<input type="button" value=".attr" class="attrbutton">
+	<p>Click the button to set/ or return attribues and values of the selected elements</p>
+	<img src="unnamed.jpg" id="attrimg">
+</div>
+
+<div class="">
+	<h1>Before</h1>
+	<input type="button" value=".before" class="beforebutton">
+	<p>Click the button to insert content before selected elements</p>
+</div>
+
+<div class="">
+	<h1>html</h1>
+	<input type="button" value=".html" class="htmlbutton">
+	<p>Click the button to set or return the content of the selected elements</p>
+</div>
+
+<div class="">
+	<h1>Text</h1>
+	<input type="button" value=".text" class="textbutton">
+	<p>Click the button to set or return the text content of the selected elements</p>
+	<p id="textparagraph">Set this paragraph content!</p>
+</div>
+
+<div class="">
+	<h1>Val</h1>
+	<input type="button" value=".val" class="valbutton">
+	<p></p>
+	<input type="text" value="" class="valtext">
+</div>
+
+<div class="">
+	<h1>Toggle</h1>
+	<input type="button" value=".toggle" class="">
+	<p></p>
+</div>
+
+<div class="">
+	<h1>Hide</h1>
+	<input type="button" value=".hide" class="">
+	<p></p>
+</div>
+
+<div class=".show">
+	<h1>Show</h1>
+	<input type="button" value=".show" class="">
+	<p></p>
+</div>
+
+<div class="slideDown">
+	<h1>Slide Down</h1>
+	<input type="button" value=".slideDown" class="">
+	<p></p>
+</div>
+
+<div class="Slidetoggle">
+	<h1>Slide Toggle</h1>
+	<input type="button" value=".slideToggle" class="slidetogglebutton">
+	<p>Click the button to slidetoggle a hidden image</p>
+	<img src="unnamed.jpg" class="hide" id="togglepic">
+</div>
+
+<div class="">
+	<h1>Slide Up</h1>
+	<input type="button" value=".slideUp" class="">
+	<p></p>
+</div>
+
+<div class="">
+	<h1>Fade Out</h1>
+	<input type="button" value=".fadeOut" class="">
+	<p></p>
+</div>
+
+<div class="">
+	<h1>Fade In</h1>
+	<input type="button" value=".fadeIn" class="">
+	<p></p>
+</div>
+
+<div class="">
+	<h1>Focus</h1>
+	<input type="button" value=".focus" class="">
+	<p></p>
+</div>
+
+<div class="">
+	<h1>Click</h1>
+	<input type="button" value=".click" class="">
+	<p></p>
+</div>
+
+</body>
+</html>
